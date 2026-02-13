@@ -10,6 +10,11 @@ const imageIndices = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
 const videoIndices = [1, 2];
 
 const Gallery = () => {
+    // Helper to get dynamic asset URLs in Vite
+    const getAssetUrl = (name) => {
+        return new URL(`../assets/${name}`, import.meta.url).href;
+    };
+
     return (
         <div className="bg-[#fafafa] min-h-screen">
             <div className="bg-secondary text-white py-24 relative overflow-hidden">
@@ -37,7 +42,7 @@ const Gallery = () => {
                                     controls
                                     preload="metadata"
                                 >
-                                    <source src={`/src/assets/(${idx}).mp4`} type="video/mp4" />
+                                    <source src={getAssetUrl(`(${idx}).mp4`)} type="video/mp4" />
                                     Tarayıcınız video etiketini desteklemiyor.
                                 </video>
                                 <div className="absolute inset-0 pointer-events-none border-2 border-primary/0 group-hover:border-primary/20 transition-colors duration-500 rounded-2xl"></div>
@@ -58,7 +63,7 @@ const Gallery = () => {
                             className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100"
                         >
                             <img
-                                src={`/src/assets/(${idx}).jpeg`}
+                                src={getAssetUrl(`(${idx}).jpeg`)}
                                 alt={`Yalçın Vinç Operasyon - ${idx}`}
                                 className="w-full h-auto object-cover transform transition duration-700 group-hover:scale-110"
                                 loading="lazy"
