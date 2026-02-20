@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mordoganyalcinvinc.com.tr/sitemap.xml

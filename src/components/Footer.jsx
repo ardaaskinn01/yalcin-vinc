@@ -18,7 +18,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <p className="text-sm leading-relaxed mb-6">
-                            Karaburun ve çevresinde, tekne kurtarma ve vinç hizmetlerinde 5 yıllık tecrübe ile güvenilir ve profesyonel çözümler sunuyoruz.
+                            Karaburun ve çevresinde, vinç hizmetlerinde 5 yıllık tecrübe ile güvenilir ve profesyonel çözümler sunuyoruz.
                         </p>
                     </div>
 
