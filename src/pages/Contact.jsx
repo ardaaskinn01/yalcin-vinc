@@ -25,7 +25,7 @@ const Contact = () => {
                             <h2 className="text-3xl font-black text-secondary mb-8">Hızlı Erişim Kanalları</h2>
 
                             {/* Phone Card - High Priority */}
-                            <a href="tel:+905530653257" className="block group">
+                            <a href="tel:+905530653257" onClick={() => { if (window.gtag_report_conversion) window.gtag_report_conversion('tel:+905530653257'); }} className="block group">
                                 <div className="bg-primary p-8 rounded-[2rem] shadow-2xl shadow-primary/20 transform transition-all duration-300 hover:-translate-y-2 flex items-center gap-6">
                                     <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-white group-hover:bg-white group-hover:text-primary transition-all">
                                         <Phone size={32} fill="currentColor" stroke="none" />

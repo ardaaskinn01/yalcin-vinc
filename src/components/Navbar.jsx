@@ -48,6 +48,7 @@ const Navbar = () => {
                         ))}
                         <a
                             href="tel:+905530653257"
+                            onClick={() => { if (window.gtag_report_conversion) window.gtag_report_conversion('tel:+905530653257'); }}
                             className="bg-gradient-to-r from-primary to-primary/80 text-white px-6 py-3 rounded-xl font-black shadow-[0_0_20px_rgba(230,57,70,0.3)] hover:shadow-[0_0_25px_rgba(230,57,70,0.5)] transition-all duration-300 flex items-center gap-3 transform hover:-translate-y-0.5 active:scale-95"
                         >
                             <div className="bg-white/20 p-1.5 rounded-lg">
@@ -90,6 +91,7 @@ const Navbar = () => {
                         ))}
                         <a
                             href="tel:+905530653257"
+                            onClick={() => { if (window.gtag_report_conversion) window.gtag_report_conversion('tel:+905530653257'); }}
                             className="bg-gradient-to-r from-primary to-primary/80 text-white px-6 py-5 rounded-2xl font-black text-center shadow-xl flex items-center justify-center gap-4 text-lg active:scale-95 transition-transform"
                         >
                             <Phone size={24} fill="currentColor" stroke="none" />

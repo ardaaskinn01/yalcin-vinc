@@ -55,7 +55,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs font-bold text-gray-600 uppercase tracking-widest">7/24 Telefon</p>
-                                    <a href="tel:+905530653257" className="text-white font-black hover:text-primary transition-colors group-hover:text-primary">+90 553 065 32 57</a>
+                                    <a href="tel:+905530653257" onClick={() => { if (window.gtag_report_conversion) window.gtag_report_conversion('tel:+905530653257'); }} className="text-white font-black hover:text-primary transition-colors group-hover:text-primary">+90 553 065 32 57</a>
                                 </div>
                             </li>
                             <li className="flex items-center gap-4 group">

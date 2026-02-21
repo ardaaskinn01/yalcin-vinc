@@ -30,7 +30,7 @@ const Home = () => {
                             İzmir, Balıklıova, Mordoğan ve Karaburun'un her noktasında; Tekne Kurtarma ve Vinç hizmetlerinde profesyonel güvence.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6">
-                            <a href="tel:+905530653257" className="group bg-primary text-white px-12 py-5 rounded-2xl font-black text-xl text-center shadow-[0_20px_40px_rgba(230,57,70,0.3)] hover:shadow-[0_25px_50px_rgba(230,57,70,0.5)] transition-all duration-300 transform hover:-translate-y-1.5 flex items-center justify-center gap-4">
+                            <a href="tel:+905530653257" onClick={() => { if (window.gtag_report_conversion) window.gtag_report_conversion('tel:+905530653257'); }} className="group bg-primary text-white px-12 py-5 rounded-2xl font-black text-xl text-center shadow-[0_20px_40px_rgba(230,57,70,0.3)] hover:shadow-[0_25px_50px_rgba(230,57,70,0.5)] transition-all duration-300 transform hover:-translate-y-1.5 flex items-center justify-center gap-4">
                                 <div className="bg-white/20 p-2 rounded-xl group-hover:bg-white group-hover:text-primary transition-all">
                                     <Phone size={24} fill="currentColor" stroke="none" />
                                 </div>
@@ -103,6 +103,7 @@ const Home = () => {
             <div className="md:hidden fixed bottom-6 left-6 right-6 z-50">
                 <a
                     href="tel:+905530653257"
+                    onClick={() => { if (window.gtag_report_conversion) window.gtag_report_conversion('tel:+905530653257'); }}
                     className="bg-gradient-to-r from-primary to-primary/80 text-white w-full py-4 rounded-xl shadow-2xl font-bold text-lg flex items-center justify-center gap-3 border border-white/20 animate-pulse shadow-primary/40"
                 >
                     <Phone size={24} fill="currentColor" stroke="none" />
